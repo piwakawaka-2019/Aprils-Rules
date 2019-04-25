@@ -1,8 +1,8 @@
 import React from 'react'
 
-import ErrorMessage from './ErrorMessage'
 
-import SubredditList from './SubredditList'
+
+
 import WaitIndicator from './WaitIndicator'
 import Header from './Header'
 import Button from './Button'
@@ -20,9 +20,7 @@ const App = () => (
   {/* <Quote/>
   <Sound/>
   <Video/> */}
-    <ErrorMessage />
-    <SubredditList />
-  </div>
+     </div>
 )
 
 export default App
