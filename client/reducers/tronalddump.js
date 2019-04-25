@@ -1,9 +1,9 @@
-import {RECEIVE_POSTS} from '../actions'
+import {RECEIVE_TRONALDDUMP} from '../actions'
 
 function subreddits (state = [], action) {
   console.log(action.tronaldDump)
   switch (action.type) {
-    case RECEIVE_POSTS:
+    case RECEIVE_TRONALDDUMP:
       return action.tronaldDump
 
     default:

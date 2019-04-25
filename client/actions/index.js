@@ -1,7 +1,7 @@
 import request from 'superagent'
 
 export const SHOW_ERROR = 'SHOW_ERROR'
-export const RECEIVE_POSTS = 'RECEIVE_POSTS'
+export const RECEIVE_TRONALDDUMP = 'RECEIVE_TRONALDDUMP'
 export const REQUEST_POSTS = 'REQUEST_POSTS'
 
 export const requestPosts = () => {
@@ -26,7 +26,7 @@ export const showError = (errorMessage) => {
 
 export function fetchTronaldDump () {
   return (dispatch) => {
-    dispatch(requestTronaldDump())
+    dispatch(requestPosts())
     return request
       .get(`/api/v1/tronalddump`)
       .then(res => {

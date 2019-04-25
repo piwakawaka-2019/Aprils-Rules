@@ -1,10 +1,10 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {fetchPosts} from '../actions'
+import {fetchTronaldDump} from '../actions'
 
 const LoadSubreddit = ({children, dispatch}) => (
   <div>
-    <button onClick={() => dispatch(fetchronaldDump())}>
+    <button onClick={() => dispatch(fetchTronaldDump())}>
       Fetch Post
     </button>
     {children}
