@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Zoom from "react-reveal/Zoom";
 
 
 function Button  (){
@@ -7,10 +7,15 @@ function Button  (){
     
     
     <div className = "button">
-    <button onClick={() => dispatch(Quote('brown eye'))}>
-      get Quote
-    </button>
-   
+    <Zoom>
+    <button onClick={() => dispatch(Quote('brown eye'))}>get Quote</button>
+   </Zoom>
+
+
+
+
+
+
   </div>
     
     
