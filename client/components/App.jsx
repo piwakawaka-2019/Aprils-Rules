@@ -4,7 +4,7 @@ import ErrorMessage from './ErrorMessage'
 
 import SubredditList from './SubredditList'
 import WaitIndicator from './WaitIndicator'
-// import Header from './Header'
+import Header from './Header'
 import Button from './Button'
 // import Quote from './Quote'
 // import Sound from './Sound'
@@ -15,13 +15,12 @@ import Button from './Button'
 
 const App = () => (
   <div className='app'>
-  {/* <Header/> */}
+  <Header/>
   <Button/>
   {/* <Quote/>
   <Sound/>
   <Video/> */}
     <ErrorMessage />
-  
     <SubredditList />
   </div>
 )
