@@ -1,7 +1,7 @@
 import React from 'react'
 
 import ErrorMessage from './ErrorMessage'
-import LoadSubreddit from './LoadSubreddit'
+
 import SubredditList from './SubredditList'
 import WaitIndicator from './WaitIndicator'
 // import Header from './Header'
@@ -21,9 +21,7 @@ const App = () => (
   <Sound/>
   <Video/> */}
     <ErrorMessage />
-    <LoadSubreddit>
-      <WaitIndicator />
-    </LoadSubreddit>
+  
     <SubredditList />
   </div>
 )
