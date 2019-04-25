@@ -1,18 +1,31 @@
-import React from 'react'
+import React, { Component } from "react";
+import { getQuotes } from '../api'
 
-import ErrorMessage from './ErrorMessage'
-import LoadSubreddit from './LoadSubreddit'
-import SubredditList from './SubredditList'
-import WaitIndicator from './WaitIndicator'
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      getQuotes: {},
+    };
+  }
 
-const App = () => (
-  <div className='app'>
-    <ErrorMessage />
-    <LoadSubreddit>
-      <WaitIndicator />
-    </LoadSubreddit>
-    <SubredditList />
-  </div>
-)
+  trumpQuote(value) {
+    this.setState({
+      getQuotes: {
+        value
+      },
+  })
+  }
 
-export default App
+
+  render() {
+    console.log(this.state);
+    return (
+      <React.Fragment>
+        <p>{this.state.api.value}</p>
+      </React.Fragment>
+    );
+  }
+}
+
+export default App;
