@@ -5,12 +5,12 @@ import Post from './Post'
 
 const Subreddit = ({subreddits}) => (
   <div>
-    {subreddits.map((post, i) =>
+    {/* {subreddits.map((post, i) =>
       <Post
         key={i}
         title={post.title}
       />
-    )}
+    )} */}
   </div>
 )
 

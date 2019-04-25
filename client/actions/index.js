@@ -10,10 +10,10 @@ export const requestPosts = () => {
   }
 }
 
-export const receivePosts = (posts) => {
+export const receiveTronaldDump = (quote) => {
   return {
-    type: RECEIVE_POSTS,
-    posts: posts.map(post => post.data)
+    type: RECEIVE_TRONALDDUMP,
+    tronaldDump: quote.value
   }
 }
 
@@ -24,13 +24,13 @@ export const showError = (errorMessage) => {
   }
 }
 
-export function fetchPosts (subreddit) {
+export function fetchTronaldDump () {
   return (dispatch) => {
-    dispatch(requestPosts())
+    dispatch(requestTronaldDump())
     return request
-      .get(`/api/v1/reddit/subreddit/${subreddit}`)
+      .get(`/api/v1/tronalddump`)
       .then(res => {
-        dispatch(receivePosts(res.body))
+        dispatch(receiveTronaldDump(res.body))
       })
       .catch(err => {
         dispatch(showError(err.message))
