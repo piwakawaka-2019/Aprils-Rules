@@ -1,17 +1,17 @@
 const express = require('express')
 const request = require('superagent')
 
-const norris = 'https://geek-jokes.sameerkumar.website/api'
+const joke = 'https://icanhazdadjoke.com/'
 
 const router = express.Router()
 
 router.use(express.json())
 
 
-router.get('/nuckchorris', (req, res) => {
-    console.log('API call')
+router.get('/dadjoke', (req, res) => {
     request
-      .get(norris)
+      .get(joke)
+      .set("Accept", "application/json")
       .end((err, result) => {
         if (err) {
           res.status(500).send(err.message)

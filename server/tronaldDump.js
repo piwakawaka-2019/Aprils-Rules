@@ -7,7 +7,6 @@ const router = express.Router()
 router.use(express.json())
 
 router.get('/tronalddump', (req, res) => {
-  console.log('API call')
   request
     .get(randomQuote)
     .end((err, result) => {

@@ -1,17 +1,16 @@
 const express = require('express')
 const request = require('superagent')
 
-const joke = 'https://icanhazdadjoke.com/search'
+const norris = 'https://geek-jokes.sameerkumar.website/api'
 
 const router = express.Router()
 
 router.use(express.json())
 
 
-router.get('/dadjoke', (req, res) => {
-    console.log('API call')
+router.get('/nuckchorris', (req, res) => {
     request
-      .get(joke)
+      .get(norris)
       .end((err, result) => {
         if (err) {
           res.status(500).send(err.message)

@@ -2,17 +2,29 @@ import React from 'react'
 
 import ErrorMessage from './ErrorMessage'
 import WaitIndicator from './WaitIndicator'
-import LoadSubreddit from './LoadSubreddit';
-import Post from './Post'
+import LoadTrump from './LoadTrump';
+import LoadChuck from './LoadChuck';
+import LoadJoke from './LoadJoke';
+import Trump from './Trump'
+import Chuck from './Chuck'
 import Sounds from './Random-Sound'
+import Joke from './Joke'
 
 const App = () => (
   <div className='app'>
     <ErrorMessage />
-    <LoadSubreddit >
+    <LoadTrump >
       <WaitIndicator />
-    </LoadSubreddit>
-    <Post />
+    </LoadTrump>
+    <LoadChuck >
+      <WaitIndicator />
+    </LoadChuck>
+    <LoadJoke >
+      <WaitIndicator />
+    </LoadJoke>
+    <Trump />
+    <Chuck />
+    <Joke />
     <button><Sounds />Yeet</button>
   </div>
 )

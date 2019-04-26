@@ -2,13 +2,13 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {fetchTronaldDump} from '../actions'
 
-const LoadSubreddit = ({children, dispatch}) => (
+const LoadTrump = ({children, dispatch}) => (
   <div>
     <button onClick={() => dispatch(fetchTronaldDump())}>
-      Fetch Post
+      Click for Intelligence
     </button>
     {children}
   </div>
 )
 
-export default connect()(LoadSubreddit)
+export default connect()(LoadTrump)

@@ -8,9 +8,9 @@ import dadJoke from './dadjoke'
 
 export default combineReducers({
   errorMessage,
-  tronalddump,
+  tronaldDump,
   waiting,
-  nuckchorris,
-  dadjoke
+  nuckChorris,
+  dadJoke
 
 })

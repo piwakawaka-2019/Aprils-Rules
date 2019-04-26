@@ -29,7 +29,7 @@ export const receiveNuckChorris = (value) => {
 export const receiveDadJoke = (joke) => {
   return {
     type: RECEIVE_DADJOKE,
-    dadJokes: joke.value
+    dadJoke: joke.joke
   }
 }
 
@@ -65,7 +65,6 @@ export function fetchNuckChorris() {
       .get(`/api/v1/nuckchorris`)
       .then(res => {
         dispatch(receiveNuckChorris(res.body))
-        console.log(res.body, res.text)
       })
       .catch(err => {
         dispatch(showError(err.message))

@@ -13,7 +13,6 @@ const store = createStore(reducers, composeEnhancers(
 ))
 
 document.addEventListener('DOMContentLoaded', () => {
-console.log(store)
   render(
     <Provider store={store}>
       <App />

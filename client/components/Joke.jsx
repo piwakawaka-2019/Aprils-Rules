@@ -4,16 +4,18 @@ import {connect} from 'react-redux'
 
 
 
-const Post = ({tronaldDump}) => (
-  <div>{tronaldDump}</div>
+const Joke = ({dadJoke}) => (
+ 
+  <div>{dadJoke}</div>
 )
 
 const mapStateToProps = (state) => {
+  
     return {
-      tronaldDump: state.tronaldDump
+      dadJoke: state.dadJoke
     }
   }
   
   export default connect(
     mapStateToProps
-  )(Post)
+  )(Joke)
