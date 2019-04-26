@@ -9,7 +9,7 @@ import Header from './Header'
 import Button from './Button'
 // import Quote from './Quote'
 // import Sound from './Sound'
-// import Video from './video'
+import Video from './video'
 import Nav from './Nav'
 
 
@@ -18,11 +18,13 @@ const App = () => (
   <div className='app'>
      <Nav/>
   <Header/>
-
   <Button/>
    {/* <Quote/>
-  <Sound/> 
-  <Video/>  */}
+  <Sound/>  */}
+  <div className="p">
+  <p></p>
+  </div>
+  <Video/> 
      </div>
 )
 
