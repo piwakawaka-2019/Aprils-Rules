@@ -27,3 +27,11 @@ export function getJoke(callback) {
     callback(err, res.body);
   });
 }
+
+export function getPictures(callback) {
+  request
+  .get(randomQuote)
+  .end((err, res) => {
+    callback(err, res.body);
+  });
+} 
