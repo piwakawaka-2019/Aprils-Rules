@@ -17,6 +17,14 @@ export const receiveTronaldDump = (quote) => {
   }
 }
 
+// export const receiveTronaldDump = (quote) => {
+//   return {
+//     type: RECEIVE_TRONALDDUMP,
+//     tronaldDump: quote.value
+//   }
+// }
+
+
 export const showError = (errorMessage) => {
   return {
     type: SHOW_ERROR,

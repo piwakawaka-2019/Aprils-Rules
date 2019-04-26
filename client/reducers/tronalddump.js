@@ -1,6 +1,6 @@
 import {RECEIVE_TRONALDDUMP} from '../actions'
 
-function subreddits (state = [], action) {
+function tronald (state = [], action) {
   console.log(action.tronaldDump)
   switch (action.type) {
     case RECEIVE_TRONALDDUMP:
@@ -11,4 +11,4 @@ function subreddits (state = [], action) {
   }
 }
 
-export default subreddits
+export default tronald
