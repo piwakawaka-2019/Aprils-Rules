@@ -1,5 +1,6 @@
 import React from 'react'
 import Zoom from "react-reveal/Zoom";
+import Roll from 'react-reveal/Roll';
 
 
 
@@ -17,9 +18,9 @@ const App = () => (
   <div className='app'>
   <Header/>
   <Button/>
-  {/* <Quote/>
-  <Sound/>
-  <Video/> */}
+   {/* <Quote/>
+  <Sound/> 
+  <Video/>  */}
      </div>
 )
 
