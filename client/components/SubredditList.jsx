@@ -8,7 +8,7 @@ const Subreddit = ({subreddits}) => (
     {subreddits.map((post, i) =>
       <Post
         key={i}
-        title={post.title}
+        title={tr.title}
       />
     )}
   </div>
@@ -16,7 +16,7 @@ const Subreddit = ({subreddits}) => (
 
 const mapStateToProps = (state) => {
   return {
-    subreddits: state.subreddits
+    tronaldDump: state.tonaldDump
   }
 }
 
