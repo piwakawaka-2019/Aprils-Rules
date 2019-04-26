@@ -1,10 +1,10 @@
 import {combineReducers} from 'redux'
 
 import errorMessage from './error-message'
-import tronalddump from './tronalddump'
-import nuckchorris from './nuckChorris'
+import tronaldDump from './tronaldDump'
+import nuckChorris from './nuckChorris'
 import waiting from './waiting'
-import dadjoke from './dadjoke'
+import dadJoke from './dadjoke'
 
 export default combineReducers({
   errorMessage,
@@ -12,4 +12,5 @@ export default combineReducers({
   waiting,
   nuckchorris,
   dadjoke
+
 })

@@ -5,18 +5,18 @@ import Post from './Post'
 
 const Subreddit = ({subreddits}) => (
   <div>
-    {/* {subreddits.map((post, i) =>
+    {subreddits.map((post, i) =>
       <Post
         key={i}
-        title={post.title}
+        title={tr.title}
       />
-    )} */}
+    )}
   </div>
 )
 
 const mapStateToProps = (state) => {
   return {
-    subreddits: state.subreddits
+    tronaldDump: state.tonaldDump
   }
 }
 

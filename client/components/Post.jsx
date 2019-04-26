@@ -1,7 +1,19 @@
-// import React from 'react'
+import React from 'react'
+import {connect} from 'react-redux'
 
-// const Post = ({title}) => (
-//   <div>{title}</div>
-// )
 
-// export default Post
+
+
+const Post = ({tronaldDump}) => (
+  <div>{tronaldDump}</div>
+)
+
+const mapStateToProps = (state) => {
+    return {
+      tronaldDump: state.tronaldDump
+    }
+  }
+  
+  export default connect(
+    mapStateToProps
+  )(Post)
