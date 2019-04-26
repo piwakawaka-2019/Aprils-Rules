@@ -2,7 +2,8 @@ import {
   SHOW_ERROR,
   REQUEST_POSTS,
   RECEIVE_TRONALDDUMP, 
-  RECEIVE_NUCKCHORRIS} from '../actions'
+  RECEIVE_NUCKCHORRIS,
+  RECEIVE_DADJOKE} from '../actions'
  
 
 const waiting = (state = false, action) => {
@@ -16,6 +17,8 @@ const waiting = (state = false, action) => {
     case RECEIVE_NUCKCHORRIS:
       return false
 
+      case RECEIVE_DADJOKE:
+      return false
 
     case SHOW_ERROR:
       return false
