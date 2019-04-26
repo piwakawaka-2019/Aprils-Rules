@@ -1,7 +1,7 @@
 import React from 'react'
-import Zoom from "react-reveal/Zoom";
-import Roll from 'react-reveal/Roll';
-// import Nav from 'react-bootstrap/Navbar'
+import Zoom from "react-reveal/Zoom"
+import Roll from 'react-reveal/Roll'
+
 
 
 import WaitIndicator from './WaitIndicator'
@@ -10,14 +10,15 @@ import Button from './Button'
 // import Quote from './Quote'
 // import Sound from './Sound'
 // import Video from './video'
-// import Nav from './Nav'
+import Nav from './Nav'
 
 
 
 const App = () => (
   <div className='app'>
+     <Nav/>
   <Header/>
-  {/* <Nav/> */}
+
   <Button/>
    {/* <Quote/>
   <Sound/> 
