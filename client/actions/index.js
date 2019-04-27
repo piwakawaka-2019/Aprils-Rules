@@ -1,6 +1,7 @@
 import request from 'superagent'
 
 export const SHOW_ERROR = 'SHOW_ERROR'
+// export const RECEIVE_POSTS = 'RECEIVE_POSTS'
 export const RECEIVE_TRONALDDUMP = 'RECEIVE_TRONALDDUMP'
 export const RECEIVE_NUCKCHORRIS = 'RECIEVE_NUCKCHORRIS'
 export const RECEIVE_DADJOKE = 'RECIEVE_DADJOKE'
@@ -38,8 +39,8 @@ export const receiveDadJoke = (joke) => {
 export const showError = (errorMessage) => {
   return {
     type: SHOW_ERROR,
-    errorMessage: errorMessage
-  }
+    errorMessage: errorMessage,
+  }  
 }
 
 

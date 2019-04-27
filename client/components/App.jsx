@@ -4,24 +4,24 @@ import React from 'react'
 
 import ErrorMessage from './ErrorMessage'
 import WaitIndicator from './WaitIndicator'
-import LoadTrump from './LoadTrump';
-import LoadChuck from './LoadChuck';
-import LoadJoke from './LoadJoke';
+import LoadTrump from './LoadTrump'
+import LoadChuck from './LoadChuck'
+import LoadJoke from './LoadJoke'
 import Trump from './Trump'
 import Chuck from './Chuck'
 import Sounds from './Random-Sound'
 import Joke from './Joke'
 import Header from './Header'
-import Button from './Button'
+// import Button from './Button'
 import Video from './video'
-import Nav from './Nav'
+// import Nav from './Nav'
 
 const App = () => (
   <div className='app'>
-      <Nav  />
+      {/* <Nav  /> */}
       <Header />
-      <Button />
-      <Video />
+      {/* <Button /> */}
+       <button><Sounds />Yeet</button>
     <ErrorMessage />
     <LoadTrump >
       <WaitIndicator />
@@ -31,11 +31,12 @@ const App = () => (
     </LoadChuck>
     <LoadJoke >
       <WaitIndicator />
-    </LoadJoke>
+        </LoadJoke>
     <Trump />
     <Chuck />
     <Joke />
-    <button><Sounds />Yeet</button>
+    <Video />
+   
   </div>
 )
 

@@ -1,6 +1,12 @@
 import React from 'react'
 import Zoom from 'react-reveal/Zoom'
 
+import {connect} from 'react-redux'
+
+
+
+
+
 const Header = ()=> {
   return(
     <div>

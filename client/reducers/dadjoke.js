@@ -1,8 +1,7 @@
 import {RECEIVE_DADJOKE} from '../actions'
 
 function dad (state = [], action) {
-  console.log(action)
-  switch (action.type) {
+    switch (action.type) {
     case RECEIVE_DADJOKE:
       return action.dadJoke
 

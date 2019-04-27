@@ -1,6 +1,7 @@
 import React from 'react'
 import Zoom from "react-reveal/Zoom";
-
+import {connect} from 'react-redux'
+import {fetchTronaldDump} from '../actions'
 
 function Button  (){
   return (
@@ -8,9 +9,9 @@ function Button  (){
     
     <div className = "button">
     <Zoom>
-    <button onClick={() => dispatch(Quote('brown eye'))}>Click For Intelligence</button>
+    <button onClick={() => dispatch(fetchTronaldDump())}>Click For Intelligence</button>
    </Zoom>
-
+   
 
 
 
@@ -24,5 +25,5 @@ function Button  (){
 }
 
 
-
-export default Button
+export default Button 
+// export default connect (LoardTrump) (Button)
